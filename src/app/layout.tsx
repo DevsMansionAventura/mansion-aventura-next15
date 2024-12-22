@@ -1,5 +1,5 @@
 // Provider
-// import { ReservationProvider } from "./context/ReservationContext";
+import { ReservationProvider } from "@/context/ReservationContext";
 // Metadata
 import type { Metadata } from "next";
 // Fonts
@@ -53,9 +53,7 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${orbitron.variable} font-poppins antialiased`}
       >
-        {/* <ReservationProvider> */}
-        {children}
-        {/* </ReservationProvider> */}
+        <ReservationProvider>{children}</ReservationProvider>
       </body>
     </html>
   );
