@@ -19,7 +19,8 @@ body {
 p,
 button,
 label,
-a {
+a,
+h2 {
   color: white;
 }
 
